@@ -1,0 +1,175 @@
+@use "../components/colors.scss" as color;
+
+.footer {
+  color: color.$white-1;
+}
+
+.footer__top {
+  background-color: color.$font-darker;
+  padding: 80px 0 60px;
+}
+
+.footer__top-inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.footer__top-col {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+
+  &:first-child {
+    max-width: 310px;
+  }
+  &:last-child {
+    max-width: 315px;
+  }
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.footer__top-text {
+  font-size: 12px;
+  line-height: 150%;
+  opacity: 0.6;
+  margin-bottom: 38px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__socials-link {
+  path {
+    transition: all 0.3s;
+  }
+
+  &:hover path {
+    fill: color.$white-1;
+  }
+}
+
+.footer__top-title {
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.footer__top-col:last-child .footer__top-title {
+  white-space: normal;
+}
+
+.footer__top-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__item-link {
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+  white-space: nowrap;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  svg {
+    margin-right: 8px;
+  }
+}
+
+.footer__form-items {
+  background: #ffffff1f;
+  border: 1px solid #ffffff33;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.footer__form-input {
+  padding: 9px 0px 9px 12px;
+  font-size: 12px;
+  line-height: 150%;
+  color: color.$white-1;
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+
+  &::placeholder {
+    color: color.$white-1;
+    opacity: 0.6;
+  }
+}
+
+.footer__form-btn {
+  background: transparent;
+  padding: 10px 12px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("/utils/images/icons/arrow-right-mini.svg");
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    &::before {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.footer__form-desc {
+  font-size: 10px;
+  line-height: 150%;
+}
+
+.footer__bottom {
+  background-color: #292c37;
+}
+
+.footer__bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer__copy {
+  span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/utils/images/icons/heart-icon.svg") 0 0 / 100% 100%
+      no-repeat;
+    vertical-align: sub;
+  }
+}
+
+.footer__go-top {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  opacity: 0.6;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}

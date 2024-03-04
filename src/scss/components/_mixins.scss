@@ -1,0 +1,29 @@
+@use "./colors.scss";
+
+@mixin button($color) {
+  display: inline-block;
+  padding: 0 40px;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 52px;
+  white-space: nowrap;
+  color: $color;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+@mixin nav {
+  white-space: nowrap;
+  line-height: 1.6;
+  transition: all 0.3s;
+
+  &:hover {
+    color: colors.$link;
+    transition: all 0.3s;
+  }
+}

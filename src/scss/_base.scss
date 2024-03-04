@@ -1,0 +1,22 @@
+@use "./components/fonts.scss";
+@use "./components/colors.scss" as color;
+
+html,
+body {
+  font-family: Lato, sans-serif;
+  color: color.$font-lighter;
+  line-height: 160%;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1260px;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
